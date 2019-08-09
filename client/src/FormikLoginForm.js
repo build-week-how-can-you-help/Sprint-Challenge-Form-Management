@@ -16,7 +16,15 @@ function LoginForm({ values, errors, touched, isSubmitting, handleSubmit, status
       setUsers(status);
     }
   }, [status]);
-
+function myFunction(arr) {
+    console.log(arr[0])
+let dat = ' '
+    arr.map((item,ix) => (
+     dat = dat + item +  (( ix === arr.length-1) ? '' : ', ')
+    )
+         )
+return  dat
+        }
   return (
     <div>
     <Form >
@@ -38,7 +46,8 @@ function LoginForm({ values, errors, touched, isSubmitting, handleSubmit, status
   <ul>{user.name}</ul>
   <li style={{marginLeft: '20%',width: '500px'}}> Course: {user.course}</li>
   <li style={{marginLeft: '20%',width: '500px'}}> Technique: {user.technique}</li>
-
+Ingredients:
+{myFunction(user.ingredients)}
   </div>
 
 ))}
