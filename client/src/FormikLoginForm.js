@@ -7,8 +7,8 @@ import axios from "axios";
 
 function LoginForm({ values, errors, touched, isSubmitting, handleSubmit, status }) {
   const [users, setUsers] = useState([])
-  console.log('users up',users);
-  console.log('status up',status);
+  // console.log('users up',users);
+  // console.log('status up',status);
 
 // 2: {name: "Collard Greens with Kimchi", course: "Side", technique
   useEffect(() => {
@@ -66,14 +66,14 @@ const FormikLoginForm = withFormik({
     if (values.username === "alreadytaken@atb.dev") {
       setErrors({ username: "That username is already taken" });
     } else {
-console.log('values are',values)
+// console.log('values are',values)
     axios
       // https://reqres.in/api/users
       .post("http://localhost:5000/api/register", values)
       // .post("https://yourdatabaseurlgoeshere.com", values)
       .then(res => {
         // setStatus(res.data);
-        console.log(res.data); // Data was created successfully and logs to console
+        // console.log(res.data); // Data was created successfully and logs to console
  // //////////////////////
  axios
  // https://reqres.in/api/users
@@ -81,7 +81,7 @@ console.log('values are',values)
  // .post("https://yourdatabaseurlgoeshere.com", values)
  .then(res => {
    setStatus(res.data);
-   console.log('from get',res.data); // Data was created successfully and logs to console
+//   console.log('from get',res.data); // Data was created successfully and logs to console
 
 // http://localhost:5000/api/restricted/data
 
