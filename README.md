@@ -26,13 +26,27 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What are the required parts of class components?
 
+
+    First: declare your class component by extending the React.Component parent class. class FooComponent extends React.Component {}.
+    Second: Use the constructor function to set up some state. because we’re calling extends, we also need to call super(); otherwise we wont have access the this
+    Third: we need to render some sort of UI to the DOM. We do this by calling the life-cycle method called render.
+
+
 - [ ] Name at least three lifecycle methods?
+
+getDerivedStateFromProps, shouldComponentUpdate,componentDidUpdate
 
 - [ ] Why are forms used so often in web applications and software?
 
+It is how a user enters data
+
 - [ ] What advantages are there by using a forms library like Formik?
 
+You don't have to type as much code as much of the code you would type is repetatie and formik does it for you
+
 - [ ] Why do we write tests for our apps?
+
+To save the trouble that can come down the road much later.
 
 ## Project Set Up
 
