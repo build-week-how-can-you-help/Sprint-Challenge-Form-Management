@@ -37,7 +37,7 @@ function LoginForm({ values, errors, touched, isSubmitting, handleSubmit, status
   <div style={{textAlign: 'left',marginLeft: '20%', border: 'medium solid black',width: '500px'}} key={user.name}>
   <ul>{user.name}</ul>
   <li style={{marginLeft: '20%',width: '500px'}}> Course: {user.course}</li>
-  <li style={{marginLeft: '20%',width: '500px'}}> Course: {user.technique}</li>
+  <li style={{marginLeft: '20%',width: '500px'}}> Technique: {user.technique}</li>
 
   </div>
 
