@@ -17,7 +17,7 @@ function LoginForm({ values, errors, touched, isSubmitting, handleSubmit, status
     }
   }, [status]);
 function myFunction(arr) {
-    console.log(arr[0])
+   // console.log(arr[0])
 let dat = ' '
     arr.map((item,ix) => (
      dat = dat + item +  (( ix === arr.length-1) ? '' : ', ')
