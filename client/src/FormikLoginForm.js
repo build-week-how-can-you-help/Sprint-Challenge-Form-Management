@@ -44,7 +44,7 @@ return  dat
 {users.map(user => (
   <div style={{textAlign: 'left',marginLeft: '20%', border: 'medium solid black',width: '500px'}} key={user.name}>
   <ul>{user.name}</ul>
-  <li style={{marginLeft: '20%',width: '500px'}}> Course: {user.course}</li>
+  <li style={{marginLeft: '20%',width: '500px'}}> Course: {user.course ? user.course : 'any'}</li>
   <li style={{marginLeft: '20%',width: '500px'}}> Technique: {user.technique}</li>
 <br></br>
 Ingredients:
