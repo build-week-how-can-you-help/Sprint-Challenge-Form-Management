@@ -13,3 +13,30 @@ it('renders without crashing', () => {
     const wrapper = rtl.render(<FormikLoginForm />);
     const hasKittensText = wrapper.queryByText(/technique/i);
   });
+
+  describe("ControlledForm", () => {
+    let wrapper;
+    let mockSubmit;  beforeEach(() => {
+      mockSubmit = jest.fn();
+      wrapper = shallow(<ControlledForm submit={mockSubmit} />);
+    });
+
+    describe("handleChange", () => {
+      it("should call setState on title", () => {
+        const mockEvent = {
+          target: {
+            name: "title",
+            value: "test"
+          }
+        };    const expected = {
+          title: "test",
+          description: "",
+          submitActive: false
+        };    wrapper.instance().handleChange(mockEvent);
+        
+        expect(wrapper.state()).toEqual(expected);
+      });
+    });
+ 
+  }
+  )
