@@ -46,7 +46,9 @@ return  dat
   <ul>{user.name}</ul>
   <li style={{marginLeft: '20%',width: '500px'}}> Course: {user.course}</li>
   <li style={{marginLeft: '20%',width: '500px'}}> Technique: {user.technique}</li>
+<br></br>
 Ingredients:
+<p></p>
 {myFunction(user.ingredients)}
   </div>
 
