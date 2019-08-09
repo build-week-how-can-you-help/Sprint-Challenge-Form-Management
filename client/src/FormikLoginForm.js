@@ -30,11 +30,11 @@ return  dat
     <Form >
       <div>
         {touched.username && errors.username && <p>{errors.username}</p>}
-        <Field type="text" name="username" placeholder="username" />
+        <Field type="text" name="username" placeholder="username" autoComplete="username" />
       </div>
       <div>
         {touched.password && errors.password && <p>{errors.password}</p>}
-        <Field type="password" name="password" placeholder="Password" />
+        <Field type="password" name="password" placeholder="Password" autoComplete="current-password" />
       </div>
       <button type='submit' disabled={isSubmitting}>Submit</button>
 
